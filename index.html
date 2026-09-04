@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="darkmode">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Kumar - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="nav-left">
+                <button id="menu-toggle" class="hamburger-btn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="/index.html" target="_blank" class="logo">╰𝖠𝘒╯</a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Project</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <!-- hire me button baad mai use karenge -->
+                <!-- <a href="#contact" class="btn btn-primary nav-btn">Hire Me</a> -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hi I am</span>
+                <h2 class="hero-name">Anurag kumar</h2>
+                <h1 class="hero-title"><span id="typewriter-text"></span><span class="type-cursor">|</span></h1>
+                <!-- Social Media Links -->
+
+                <div class="social-links">
+                    <a target="_blank" href="https://www.instagram.com/theakcoder?igsi=MTZqYnJ1aGtjd3Nxcw=="
+                        class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/anurag0605-ak" class="social-icon" aria-label="Github"><i
+                            class="fa-brands fa-github"></i></a>
+                    <!-- <a href="#" class="social-icon" aria-label="Behance"><i class="fa-brands fa-behance"></i></a> -->
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+
+                    <!-- dowload cv thoda or skill ho jayega tab set karenge -->
+                    <!-- <a href="#" class="btn btn-outline">Downlead CV</a> -->
+
+                </div>
+
+                <!-- Stats Card -->
+                <div class="stats-card">
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Experiences</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Project done</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-circle-bg"></div>
+                <img src="/hero-main.png" alt="Anurag kumar" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Frontend Developer | Video Editor | UI/UX Designer </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-arch-bg"></div>
+                    <img src="/hero-main.png" alt="About Anurag kumar" class="about-img">
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I craft digital experiences where design meets technology. As a Frontend Developer and UI/UX
+                        Designer, I focus on building modern, responsive, and intuitive interfaces that combine
+                        creativity with functionality. I believe great design is more than visual appeal. It is about
+                        creating seamless interactions, meaningful user experiences, and products that people genuinely
+                        enjoy using. Every project I work on is an opportunity to learn, improve, and transform ideas
+                        into clean, efficient, and engaging digital solutions.
+                        <br>
+                        Beyond web development, I enjoy visual storytelling through video editing, where I bring ideas
+                        to life with motion, rhythm, and creativity. I am also exploring the world of Artificial
+                        Intelligence and Machine Learning, constantly expanding my knowledge to build smarter and more
+                        innovative applications in the future. My approach is driven by curiosity, attention to detail,
+                        and a commitment to continuous growth. Whether I am designing an interface, writing code, or
+                        editing a video, I strive to create work that is impactful, user-focused, and crafted with
+                        purpose.
+
+                    </p>
+                    <a href="#" class="btn btn-primary download-btn">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">I provide creative and technical solutions that combine modern design, clean
+                    development, and engaging visual storytelling to deliver memorable digital experiences.</p>
+            </div>
+            <div class="services-grid" aria-label="Services carousel">
+                <div class="services-track">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Frontend Development</h3>
+                        <p class="service-desc">Building responsive, fast, and modern websites with clean code and
+                            seamless user experiences.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-desc">Designing intuitive interfaces that balance aesthetics, usability, and
+                            accessibility.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Responsive Web Design</h3>
+                        <p class="service-desc">Creating websites that adapt perfectly across desktop, tablet, and
+                            mobile devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-controls" aria-label="Services carousel controls">
+                <button class="services-arrow services-arrow-prev" type="button" aria-label="Previous service">
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="services-dots"></div>
+                <button class="services-arrow services-arrow-next" type="button" aria-label="Next service">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Skills Section (Circular Gauges) -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="skills-carousel" aria-label="Skills carousel">
+                    <div class="skills-grid" id="skills-grid">
+                        <!-- Dynamic skills will render here via JavaScript -->
+                    </div>
+                </div>
+                <div class="skills-controls" aria-label="Skills carousel controls">
+                    <button class="skills-arrow skills-arrow-prev" type="button" aria-label="Previous skill">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="skills-dots"></div>
+                    <button class="skills-arrow skills-arrow-next" type="button" aria-label="Next skill">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio / Project Section -->
+        <section id="project" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">Explore my recent creative UI/UX case studies and design projects</p>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="app">App Design</button>
+                    <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                    <button class="filter-btn" data-filter="video">Video Editing</button>
+                </div>
+                <!-- Project Grid -->
+                <div class="project-grid" aria-label="Portfolio carousel">
+                    <div class="project-track">
+                        <!-- Project 1 -->
+                        <div class="project-card" data-category="uiux">
+                            <div class="project-preview preview-gradient-1">
+                                <div class="project-mockup-ui">
+                                    <div class="mockup-header">
+                                        <span class="mockup-dot red"></span>
+                                        <span class="mockup-dot yellow"></span>
+                                        <span class="mockup-dot green"></span>
+                                    </div>
+                                    <div class="mockup-body">
+                                        <div class="mockup-line title"></div>
+                                        <div class="mockup-box"></div>
+                                        <div class="mockup-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">UI/UX Design</span>
+                                <h3 class="project-title">Air Visual App Interface</h3>
+                                <p class="project-desc">Clean air quality tracking dashboard with interactive analytics.
+                                </p>
+                                <a href="#" class="project-link">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="uiux">
+                            <div class="project-preview preview-gradient-1">
+                                <div class="project-mockup-ui">
+                                    <div class="mockup-header">
+                                        <span class="mockup-dot red"></span>
+                                        <span class="mockup-dot yellow"></span>
+                                        <span class="mockup-dot green"></span>
+                                    </div>
+                                    <div class="mockup-body">
+                                        <div class="mockup-line title"></div>
+                                        <div class="mockup-box"></div>
+                                        <div class="mockup-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">UI/UX Design</span>
+                                <h3 class="project-title">Air Visual App Interface</h3>
+                                <p class="project-desc">Clean air quality tracking dashboard with interactive analytics.
+                                </p>
+                                <a href="#" class="project-link">View Details <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-controls" aria-label="Portfolio carousel controls">
+                    <button class="project-arrow project-arrow-prev" type="button" aria-label="Previous project">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="project-dots"></div>
+                    <button class="project-arrow project-arrow-next" type="button" aria-label="Next project">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact me</h2>
+                    <p class="section-subtitle">Cultivating Connections: Reach Out and Connect With Me</p>
+                </div>
+                <form class="contact-form" id="contact-form"
+                    onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" class="form-input" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" class="form-input" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="contact-service" class="form-input form-select" required>
+                                <option value="" disabled selected>Service Options</option>
+                                <option value="app-design">App Design</option>
+                                <option value="uiux-design">UI/UX Design</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="video-editing">Video Editing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-timeline" class="form-input"
+                                placeholder="Timeline (e.g. 2 weeks)">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="contact-details" class="form-input form-textarea" rows="5"
+                            placeholder="Project Details" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary submit-btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <a href="#" class="footer-logo">╰𝖠𝘒╯</a>
+                <ul class="footer-nav">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                    <li><a href="#about" class="footer-link">About me</a></li>
+                    <li><a href="#project" class="footer-link">Project</a></li>
+                    <li><a href="#contact" class="footer-link">Contact me</a></li>
+                </ul>
+                <div class="social-links footer-socials">
+                    <a target="_blank" href="https://www.instagram.com/theakcoder?igsi=MTZqYnJ1aGtjd3Nxcw=="
+                        class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/anurag0605-ak" class="social-icon" aria-label="github"><i
+                            class="fa-brands fa-github"></i></a>
+
+                </div>
+                <div class="footer-contact-info">
+                    <p><i class="fa-solid fa-envelope"></i>aklip.gpt0605@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i> +91 987 650 605</p> -->
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Anurag Kumar All Rights Reserved Inc.</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JavaScript -->
+        <script src="/script.js"> </script>
+</body>
+
+</html>
