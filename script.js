@@ -19,7 +19,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-// --- Theme (Dark / Light) Mode Toggle ---
+// --- Theme (Dark / Light)  ---
 const themeToggleBtn = document.getElementById('theme-toggle');
 const themeIcon = themeToggleBtn.querySelector('i');
 // Check stored theme preference
@@ -63,11 +63,10 @@ filterBtns.forEach(btn => {
     if (window.refreshPortfolioCarousel) window.refreshPortfolioCarousel();
   });
 });
-// --- Typewriter / Role Cycling Effect ---
+// --- Typewriter  ---
 const typewriterEl = document.getElementById('typewriter-text');
 const roles = [
   'UI/UX Designer',
-  'Content Creator',
   'Frontend Developer',
   'AI/ML Engineer',
   
@@ -104,17 +103,14 @@ function typeRole() {
 }
 typeRole();
 
-// --- Skills Dynamic Data & Smooth Animation ---
+// --- Skills & Smooth Animation ---
 const skillsData = [
-    { name: "HTML & CSS", percentage: 95 },
-    { name: "JavaScript", percentage: 80 },
+    { name: "HTML & CSS", percentage: 100 },
+    { name: "JavaScript", percentage: 70 },
     { name: "Canva", percentage: 85 },
-    { name: "Adobe Illustrator", percentage: 60 },
-    { name: "Adobe Premiere", percentage: 70 },
-    { name: "Adobe Illustrator", percentage: 60 },
-    { name: "Adobe ", percentage: 70 }
-    
-    
+    { name: "C", percentage: 90 },
+    { name: "Java", percentage: 90 },
+    { name: "Python", percentage: 80 }
     
 ];
 
@@ -153,12 +149,10 @@ function animateSkill(card) {
     const targetOffset = progressBar.getAttribute('data-target-offset');
     const targetPercentage = parseInt(percentText.getAttribute('data-target'), 10);
 
-    // Animate SVG Circle Gauge
     progressBar.style.strokeDashoffset = targetOffset;
-
-    // Animate Percentage Counter Text
+  
     let currentPercentage = 0;
-    const duration = 1000; // 1 second
+    const duration = 1000; 
     const intervalTime = 50;
     const steps = duration / intervalTime;
     const increment = targetPercentage / steps;
@@ -187,7 +181,7 @@ function initSkillsObserver() {
             if (entry.isIntersecting && !animated) {
                 const skillCards = skillsSection.querySelectorAll('.skill-card');
                 skillCards.forEach(card => animateSkill(card));
-                animated = true; // Prevents re-triggering repeatedly
+                animated = true; 
             }
         });
     }, { threshold: 0.3 });
@@ -195,10 +189,11 @@ function initSkillsObserver() {
     observer.observe(skillsSection);
 }
 
-// Initialize on DOM Ready
+
 document.addEventListener('DOMContentLoaded', initSkillsObserver);
 
-// --- Mobile Services Carousel ---
+
+
 function initServicesCarousel() {
     const carousel = document.querySelector('.services-grid');
     const track = carousel && carousel.querySelector('.services-track');
