@@ -10,13 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 
 <body>
-    <!-- Header / Navbar -->
+    <!-- Header -->
     <header class="header">
         <div class="container nav-container">
             <div class="nav-left">
@@ -56,8 +55,9 @@
                 <div class="social-links">
                     <a target="_blank" href="https://www.instagram.com/theakcoder?igsi=MTZqYnJ1aGtjd3Nxcw=="
                         class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/anurag0605-ak" class="social-icon" aria-label="Github"><i
+                    <a target="_blank" href="https://www.linkedin.com/in/anurag-kumar-716162366/" class="social-icon"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon" aria-label="Github"><i
                             class="fa-brands fa-github"></i></a>
                     <!-- <a href="#" class="social-icon" aria-label="Behance"><i class="fa-brands fa-behance"></i></a> -->
                 </div>
@@ -74,16 +74,19 @@
 
                 <!-- Stats Card -->
                 <div class="stats-card">
+
                     <div class="stat-item">
                         <span class="stat-number">1+</span>
                         <span class="stat-label">Experiences</span>
                     </div>
                     <div class="stat-divider"></div>
+
                     <div class="stat-item">
                         <span class="stat-number">15+</span>
                         <span class="stat-label">Project done</span>
                     </div>
                     <div class="stat-divider"></div>
+
                     <div class="stat-item">
                         <span class="stat-number">5+</span>
                         <span class="stat-label">Happy Clients</span>
@@ -92,7 +95,7 @@
             </div>
             <div class="hero-image-wrapper">
                 <div class="hero-circle-bg"></div>
-                <img src="hero-main.png" alt="Anurag kumar" class="hero-img">
+                <img src="/hero-main.png" alt="Anurag kumar" class="hero-img">
             </div>
         </div>
     </section>
@@ -107,7 +110,7 @@
             <div class="about-grid">
                 <div class="about-image-wrapper">
                     <div class="about-arch-bg"></div>
-                    <img src="hero-main.png" alt="About Anurag kumar" class="about-img">
+                    <img src="/hero-main.png" alt="About Anurag kumar" class="about-img">
                 </div>
                 <div class="about-content">
                     <p class="about-text">
@@ -220,12 +223,12 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio / Project Section -->
+        <!-- Project Section -->
         <section id="project" class="portfolio-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Portfolio</h2>
-                    <p class="section-subtitle">Explore my recent creative UI/UX case studies and design projects</p>
+                    <p class="section-subtitle">Explore my recent design and web development projects</p>
                 </div>
                 <!-- Filter Buttons -->
                 <div class="portfolio-filters">
@@ -234,59 +237,28 @@
                     <button class="filter-btn" data-filter="app">App Design</button>
                     <button class="filter-btn" data-filter="graphic">Graphic Design</button>
                     <button class="filter-btn" data-filter="video">Video Editing</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
                 </div>
                 <!-- Project Grid -->
                 <div class="project-grid" aria-label="Portfolio carousel">
                     <div class="project-track">
                         <!-- Project 1 -->
-                        <div class="project-card" data-category="uiux">
-                            <div class="project-preview preview-gradient-1">
-                                <div class="project-mockup-ui">
-                                    <div class="mockup-header">
-                                        <span class="mockup-dot red"></span>
-                                        <span class="mockup-dot yellow"></span>
-                                        <span class="mockup-dot green"></span>
-                                    </div>
-                                    <div class="mockup-body">
-                                        <div class="mockup-line title"></div>
-                                        <div class="mockup-box"></div>
-                                        <div class="mockup-line"></div>
-                                    </div>
-                                </div>
+                        <div class="project-card" data-category="web">
+                            <div class="project-preview youtube-preview">
+                                <iframe src="Project/youtube-clone/youtube.html"
+                                    title="Live preview of the YouTube clone project" loading="lazy" tabindex="-1"
+                                    aria-hidden="true">
+                                </iframe>
                             </div>
                             <div class="project-info">
-                                <span class="project-category">UI/UX Design</span>
-                                <h3 class="project-title">Air Visual App Interface</h3>
-                                <p class="project-desc">Clean air quality tracking dashboard with interactive analytics.
-                                </p>
-                                <a href="#" class="project-link">View Details <i
-                                        class="fa-solid fa-arrow-right"></i></a>
+                                <span class="project-category">Web Development</span>
+                                <h3 class="project-title">YouTube Homepage Clone</h3>
+                                <p class="project-desc">A responsive YouTube-inspired video browsing interface.</p>
+                                <a href="Project/youtube-clone/youtube.html" class="project-link" target="_blank"
+                                    rel="noopener noreferrer">Open Project <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="project-card" data-category="uiux">
-                            <div class="project-preview preview-gradient-1">
-                                <div class="project-mockup-ui">
-                                    <div class="mockup-header">
-                                        <span class="mockup-dot red"></span>
-                                        <span class="mockup-dot yellow"></span>
-                                        <span class="mockup-dot green"></span>
-                                    </div>
-                                    <div class="mockup-body">
-                                        <div class="mockup-line title"></div>
-                                        <div class="mockup-box"></div>
-                                        <div class="mockup-line"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <span class="project-category">UI/UX Design</span>
-                                <h3 class="project-title">Air Visual App Interface</h3>
-                                <p class="project-desc">Clean air quality tracking dashboard with interactive analytics.
-                                </p>
-                                <a href="#" class="project-link">View Details <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="project-controls" aria-label="Portfolio carousel controls">
@@ -359,8 +331,9 @@
                 <div class="social-links footer-socials">
                     <a target="_blank" href="https://www.instagram.com/theakcoder?igsi=MTZqYnJ1aGtjd3Nxcw=="
                         class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/anurag0605-ak" class="social-icon" aria-label="github"><i
+                    <a target="_blank" href="https://www.linkedin.com/in/anurag-kumar-716162366/" class="social-icon"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon" aria-label="github"><i
                             class="fa-brands fa-github"></i></a>
 
                 </div>
@@ -372,11 +345,12 @@
                     <p>&copy; 2026 Anurag Kumar All Rights Reserved Inc.</p>
                 </div>
             </div>
+
         </footer>
 
 
         <!-- JavaScript -->
-        <script src="script.js"> </script>
+        <script src="/script.js"> </script>
 </body>
 
 </html>
