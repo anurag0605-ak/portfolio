@@ -7,10 +7,11 @@
     <title>Anurag Kumar - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/ak.jpg" sizes="40x40"  >
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -22,7 +23,7 @@
                 <button id="menu-toggle" class="hamburger-btn" aria-label="Toggle navigation menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <a href="/index.html" target="_blank" class="logo">╰𝖠𝘒╯</a>
+                <a href="index.html" target="_blank" class="logo">╰𝖠𝘒╯</a>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu" id="nav-menu">
@@ -57,8 +58,8 @@
                         class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/anurag-kumar-716162366/" class="social-icon"
                         aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon" aria-label="Github"><i
-                            class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon"
+                        aria-label="Github"><i class="fa-brands fa-github"></i></a>
                     <!-- <a href="#" class="social-icon" aria-label="Behance"><i class="fa-brands fa-behance"></i></a> -->
                 </div>
 
@@ -82,20 +83,20 @@
                     <div class="stat-divider"></div>
 
                     <div class="stat-item">
-                        <span class="stat-number">15+</span>
+                        <span class="stat-number">5+</span>
                         <span class="stat-label">Project done</span>
                     </div>
                     <div class="stat-divider"></div>
 
                     <div class="stat-item">
-                        <span class="stat-number">5+</span>
+                        <span class="stat-number">2+</span>
                         <span class="stat-label">Happy Clients</span>
                     </div>
                 </div>
             </div>
             <div class="hero-image-wrapper">
                 <div class="hero-circle-bg"></div>
-                <img src="/hero-main.png" alt="Anurag kumar" class="hero-img">
+                <img src="hero-main.png" alt="Anurag kumar" class="hero-img">
             </div>
         </div>
     </section>
@@ -110,7 +111,7 @@
             <div class="about-grid">
                 <div class="about-image-wrapper">
                     <div class="about-arch-bg"></div>
-                    <img src="/hero-main.png" alt="About Anurag kumar" class="about-img">
+                    <img src="hero-main.png" alt="About Anurag kumar" class="about-img">
                 </div>
                 <div class="about-content">
                     <p class="about-text">
@@ -273,45 +274,72 @@
         </section>
 
         <!-- Contact Me Section -->
+
+
         <section id="contact" class="contact-section">
             <div class="container">
+
                 <div class="section-header">
                     <h2 class="section-title">Contact me</h2>
-                    <p class="section-subtitle">Cultivating Connections: Reach Out and Connect With Me</p>
+                    <p class="section-subtitle">
+                        Cultivating Connections: Reach Out and Connect With Me
+                    </p>
                 </div>
-                <form class="contact-form" id="contact-form"
-                    onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+
+                <form class="contact-form" action="https://formspree.io/f/mwlpanwb" method="POST" id="contact-form">
+
                     <div class="form-row">
+
                         <div class="form-group">
-                            <input type="text" id="contact-name" class="form-input" placeholder="Name" required>
+                            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Name"
+                                required>
                         </div>
+
                         <div class="form-group">
-                            <input type="email" id="contact-email" class="form-input" placeholder="Email" required>
+                            <input type="email" id="contact-email" name="email" class="form-input" placeholder="Email"
+                                required>
                         </div>
+
                     </div>
+
+
                     <div class="form-row">
+
                         <div class="form-group">
-                            <select id="contact-service" class="form-input form-select" required>
-                                <option value="" disabled selected>Service Options</option>
+                            <select id="contact-service" name="service" class="form-input form-select" required>
+                                <option value="" disabled selected>
+                                    Service Options
+                                </option>
+
                                 <option value="app-design">App Design</option>
                                 <option value="uiux-design">UI/UX Design</option>
                                 <option value="graphic-design">Graphic Design</option>
                                 <option value="video-editing">Video Editing</option>
                             </select>
                         </div>
+
                         <div class="form-group">
-                            <input type="text" id="contact-timeline" class="form-input"
+                            <input type="text" id="contact-timeline" name="timeline" class="form-input"
                                 placeholder="Timeline (e.g. 2 weeks)">
                         </div>
+
                     </div>
+
+
                     <div class="form-group full-width">
-                        <textarea id="contact-details" class="form-input form-textarea" rows="5"
+                        <textarea id="contact-details" name="project_details" class="form-input form-textarea" rows="5"
                             placeholder="Project Details" required></textarea>
                     </div>
+
+
                     <div class="form-submit">
-                        <button type="submit" class="btn btn-primary submit-btn">Send</button>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send
+                        </button>
                     </div>
+
                 </form>
+
             </div>
         </section>
 
@@ -333,8 +361,8 @@
                         class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/anurag-kumar-716162366/" class="social-icon"
                         aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon" aria-label="github"><i
-                            class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/anurag0605-ak" class="social-icon"
+                        aria-label="github"><i class="fa-brands fa-github"></i></a>
 
                 </div>
                 <div class="footer-contact-info">
@@ -350,7 +378,7 @@
 
 
         <!-- JavaScript -->
-        <script src="/script.js"> </script>
+        <script src="script.js"> </script>
 </body>
 
 </html>
